@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <p>This page can be used to add food to the database and delete them</p>
+    <table>
+        <tr>
+            <th>Food Name</th>
+            <th>Food Price</th>
+            <th>Update/Delete</th>
+        </tr>
+        {% for food in foods %}
+            <tr> 
+                <td>{{ food.name }}</td>
+                <td>{{ food.price }}</td>
+                <td>
+                    <a href="/update/{{food.id}}" ><button id="update-bt">Update</button></a>
+                    <a href="/delete/{{food.id}}" ><button id="delete-bt">Delete</button></a>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+    <form autocomplete="off" method="POST" class="create-form" >
+        <h3> Add Food </h3>
+        <input type="text" placeholder="Enter Food Name" name="foodname" required>
+        <input type="number" placeholder="Enter Food Price" name="price" required >
+        <input type="submit">
+    </form>
+{% endblock %}
