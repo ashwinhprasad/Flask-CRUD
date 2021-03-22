@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <form autocomplete="off" method="POST" class="update-form"> 
+        <h3>Update Food</h2>
+        <input type="text" value={{food.name}} name="foodname">
+        <input type="number" value={{food.price}} name="price">
+        <input type="submit" >
+    </form>
+{% endblock %}

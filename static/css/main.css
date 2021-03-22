@@ -1,0 +1,63 @@
+h2, h3{
+    text-align: center;
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p{
+    text-align: center;
+}
+
+body{
+    background-color: steelblue;
+}
+
+table{
+    width:50em;
+    margin:auto auto auto auto;
+    background-color: rgb(255, 255, 255);
+    padding:1em;
+    border:1px solid black;
+    border-radius: 0.3em;
+}
+
+td{
+    text-align: center;
+}
+
+#update-bt{
+    background-color:yellow;
+    border:none;
+    border-radius: 0.3em;
+    padding:0.7em 0.5em 0.7em 0.5em;
+}
+
+#delete-bt{
+    background-color:red;
+    border:none;
+    border-radius:0.3em;
+    padding:0.7em 0.5em 0.7em 0.5em;
+}
+
+.create-form, .update-form{
+    display:flex;
+    flex-direction: column;
+    background-color:white;
+    margin:2em auto auto auto;
+    width:30em;
+    padding:2em 1em 2em 1em;
+    border:1px solid black;
+    border-radius:0.3em;
+}
+
+.create-form > input[type="text"],.create-form > input[type="number"], .update-form > input[type="text"],.update-form > input[type="number"] {
+    margin:auto auto 0.2em auto;
+    padding:0.2em;
+    width:20em;
+}
+
+.create-form > input[type="submit"], .update-form > input[type="submit"]{
+    margin:2em auto auto auto;
+    width:7em;
+    padding:0.3em;
+}
